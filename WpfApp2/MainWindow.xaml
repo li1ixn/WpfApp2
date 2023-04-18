@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Basic" Height="450" Width="800">
+  
     <Grid>
-        <Label Content="See me" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" Visibility="Hidden" Name="txt" HorizontalAlignment="Center" Height="50" Margin="0,0,0,0" VerticalAlignment="Center" Width="140"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="See me" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" Visibility="Hidden" Name="txt" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="140"/>
         <Button Click="Show" Content="Show me" HorizontalAlignment="Left" Height="25" Margin="100,225,0,0" VerticalAlignment="Top" Width="80" Name="ShowN"/>
         <Button Content="Hide me" HorizontalAlignment="Left" Height="25" Margin="620,225,0,0" VerticalAlignment="Top" Width="80" Click="Hide" Name="HideN" Visibility="Hidden"/>
-        <Button Content="Toggle" HorizontalAlignment="Center" Height="25" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="80" Click="Toggle" Name="ToggleN" Visibility="Visible"/>
+        <Button Content="Toggle" HorizontalAlignment="Center" Height="25" Margin="0,359,0,0" VerticalAlignment="Top" Width="80" Click="Toggle" Name="ToggleN" Visibility="Visible"/>
         <Image Margin="283,66,283,228" Source="/sc.png" Stretch="Fill" Name="pix" Visibility="Collapsed"/>
     </Grid>
 </Window>

@@ -64,13 +64,23 @@ namespace WpfApp2
             {
                 txt.Visibility = Visibility.Visible;
                 pix.Visibility = Visibility.Visible;
-                HideN.Visibility = Visibility.Hidden;
+                //HideN.Visibility = Visibility.Hidden;
                 ShowN.Visibility = Visibility.Hidden;
             }
             if (true && ShowN.Visibility == Visibility.Visible)
             {
                 HideN.Visibility = Visibility.Hidden;
             }
+            
+            if (true && ShowN.Visibility == Visibility.Visible && txt.Visibility == Visibility.Visible)
+            {
+                //HideN.Visibility = Visibility.Visible;
+            }
+
+            if (txt.Visibility == Visibility.Hidden)
+            {
+                HideN.Visibility = Visibility.Hidden;
+            } else HideN.Visibility = Visibility.Visible;
         }   
     }
 }
